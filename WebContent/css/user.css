@@ -1,0 +1,56 @@
+
+body {
+	padding-top: 70px;
+}
+
+.form-control{
+	margin-top:0px;
+}
+
+#warning{
+	padding:5px 0;
+}
+
+.box {
+	position: relative;
+	float: left;
+	margin-top: 10px;
+}
+
+a.link {
+	float: left;
+	display: inline-block;
+	padding: 4px 16px;
+	color: #fff;
+	font: 14px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+	cursor: pointer;
+	background-color: #0099ff;
+	line-height: 28px;
+	text-decoration: none;
+}
+.user-div {
+	min-height: 140px;
+	padding: 20px;
+	background-color: #4380B8;
+}
+	.user-div .inner-text {
+		text-align: right;
+		position: relative;
+		color: #fff;
+		font-weight: 800;
+		line-height: 25px;
+	}
+	
+	.list-group-item:first-child {
+		border-radius: 0;
+	}
+	
+	.list-group a {
+		text-indent: 1.2em;
+	    text-decoration: none;
+	    color: #777;
+	}
+	
+	.glyphicon {
+		padding-right: 0.5em;
+	}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>选课页面</title>
+<link href="../css/blue.css" rel="stylesheet">
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="../css/user.css" rel='stylesheet' type='text/css' />
+<link href="../css/base.css" rel='stylesheet' type='text/css' />
+<style>
+	html, body {
+		font-family: 'Lato', 微软雅黑;
+		font-size: 100%;
+		background: #fff;
+	}
+	td,th{
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	
+	<div class="container-fluid" style="padding-left: 0;">
+		<div class="row-fluid">
+			<div class="col-xs-12 col-md-2 col-lg-2" style="padding-left: 0;">
+				<div class="user-div" style="height: 140px; background-color:#ffffff; margin-top:20px;">
+					<div class="inner-text"
+						style="float: right; margin-top: 20px; padding-right: 12px;">
+					</div>
+				</div>
+				<div id="Logo"><h1 ></h1></div>
+				<ul class="list-group">
+					<li class="list-group-item">学生登录</li>
+					<a href="srs.html" class="list-group-item"><span
+						class="glyphicon glyphicon-book"></span>学生选课</a>
+					<a href="enrolledSections.html" class="list-group-item"><span
+						class="glyphicon glyphicon-file"></span>已选课程</a>
+					<a href="qurryGrades.html" class="list-group-item"><span
+						class="glyphicon glyphicon-list-alt"></span>成绩查询</a>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-9 col-lg-9">
+				<div>
+					<h2>选课</h2>
+				</div>
+				<hr/>
+				<div  class="row-fluid">
+					<div class="col-xs-12 col-md-4 col-lg-4">
+						<input type="text" name="search" id="search" style="width:80%;" placeholder="课程名称" class="form-control">
+						<button  id="btn" class="btn btn-default" onclick="Search()">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</div>
+					<div class="clo-xs-12 col-md-4 clo-lg-4">				 		
+							<select class="form-control btn btn-default" id="semester">
+								<option value="201501">2015年第一学期</option>
+								<option value="201502">2015年第二学期</option>
+							</select>	
+					</div>
+					
+				</div>
+				<br/><br/>
+				<div id="class">
+					<form  method="post" action="../enrollClass" name="enrollORdrop" id="showclass" >
+						
+					</form>
+				</div>
+				<nav style="text-align:right;">
+				  <ul class="pagination" id="page" style="margin:0 10px 10px 0"></ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+			
+			
+			<!-- <div class="col-xs-12 col-md-9 col-lg-9">							
+				<button class="btn btn-primary btn-block" onclick="search();" >查询</button>	
+				
+				<div class="table-responsive">
+					<table class="table table-hover" id="guitarsearch">
+						<tr>
+							<th>课程标号</th>
+							<th>课程名称</th>
+							<th>学分</th>
+						</tr>						
+					</table>
+					
+				</div>
+			</div> -->
+</body>
+<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+<script type="text/JavaScript" src="../js/jquery.form.js"></script> 
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/srs.js"></script>
+</html>
